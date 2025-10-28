@@ -5,16 +5,24 @@ import { HeaderLayoutComponent } from './shared/header-layout/header-layout.comp
 import { FooterLayoutComponent } from './shared/footer-layout/footer-layout.component';
 import { CurrencyPipe } from './shared/pipes/CurrencyPipe.pipe';
 import { UpperCasePipe } from './shared/pipes/UpperCasePipe.pipe';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderLayoutComponent, FooterLayoutComponent,
-     FormsModule, CurrencyPipe, UpperCasePipe],
+     FormsModule, CurrencyPipe, UpperCasePipe, NgFor],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
+  products = [
+    {name: 'cuon theo chieu gio', price: 120000, image: "assets/images/product1.jpg"},
+    {name: 'sach2', price: 120000, image: "assets/images/product1.jpg"},
+    {name: 'sach3', price: 120000, image: "assets/images/product1.jpg"},
+    {name: 'sach4', price: 120000, image: "assets/images/product1.jpg"},
+  ]
 
 
   // //text
