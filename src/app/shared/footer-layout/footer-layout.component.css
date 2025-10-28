@@ -1,0 +1,99 @@
+:host {
+    /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+    display: block;
+}
+
+.footer-container {
+    /* THAY ĐỔI: Nền trắng */
+    background-color: #fefdfd; 
+    
+    /* THAY ĐỔI: Chữ màu tối */
+    color: #333333; 
+    
+    padding: 3rem 1rem;
+    font-family: Arial, sans-serif;
+    
+    /* THAY ĐỔI: Đường viền trên màu tối hơn, ít trong suốt */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    gap: 2rem; 
+}
+
+.footer-column {
+    flex-basis: 250px; 
+    flex-grow: 1; 
+}
+
+.footer-column h3 {
+    /* THAY ĐỔI: Tiêu đề màu đen (hoặc màu tối) */
+    color: #000000;
+    
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    
+    /* Đường kẻ dưới vẫn giữ màu gradient để tạo điểm nhấn */
+    border-bottom: 2px solid #d434b0; 
+    
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a {
+    /* THAY ĐỔI: Liên kết màu xám đậm để dễ đọc */
+    color: #555555; 
+    
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #8029fc; /* Giữ màu gradient khi hover */
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    
+    /* THAY ĐỔI: Đường viền trên màu tối hơn */
+    border-top: 1px solid rgba(0, 0, 0, 0.05); 
+    
+    font-size: 0.8rem;
+    
+    /* THAY ĐỔI: Màu chữ copyright màu xám nhạt */
+    color: #888888; 
+}
+
+/* Biểu tượng mạng xã hội */
+.social-icons a {
+    margin-right: 1rem;
+    
+    /* THAY ĐỔI: Biểu tượng màu tối */
+    color: #333333; 
+    
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d434b0;
+}
