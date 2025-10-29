@@ -28,5 +28,4 @@ export class HomeComponent {
       this.products.splice(productIndex, 1);
     }
   }
-
 }
