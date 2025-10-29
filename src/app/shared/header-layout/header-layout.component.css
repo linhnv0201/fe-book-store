@@ -20,7 +20,7 @@
 }
 
 .group-navigation .btn-navigation{
-    background-image: linear-gradient(to right, #D434B0, #8029FC);
+    /* background-image: linear-gradient(to right, #D434B0, #8029FC); */
     padding: .5rem;   
     display: flex;
     justify-content: center;
@@ -50,6 +50,5 @@
     text-decoration: none;                  /* chắc chắn không có gạch dưới */
     transform: scale(1.05);                 /* phóng to nhẹ */
 }
-
 
 
