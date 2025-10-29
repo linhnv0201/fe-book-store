@@ -23,10 +23,6 @@ export class HomeComponent implements OnInit {
 
   handleDelete = (id: number) => {
     console.log(id);
-    // const productIndex = this.products.findIndex(item => item.id == id);
-    // if (productIndex != -1) {
-    //   this.products.splice(productIndex, 1);
-    // }
 
     this.products = this.products.filter((item) => item.id !== id);
   }
