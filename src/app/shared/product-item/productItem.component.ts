@@ -3,18 +3,24 @@ import { RouterLink, RouterOutlet } from "@angular/router";
 import { CurrencyPipe } from "../pipes/CurrencyPipe.pipe";
 import { UpperCasePipe } from "../pipes/UpperCasePipe.pipe";
 import { NgFor, NgIf } from "@angular/common";
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { ProductItem } from "../types/productItem";
 
 @Component({
-  selector: 'app-product-item',
-  standalone: true,
-  imports: [RouterOutlet,
-    FormsModule, CurrencyPipe, UpperCasePipe, NgFor, NgIf, RouterLink],
-  templateUrl: './productItem.component.html',
-  styleUrl: './productItem.component.css',
+    selector: 'app-product-item',
+    standalone: true,
+    imports: [RouterOutlet,
+        FormsModule, CurrencyPipe, UpperCasePipe, NgFor, NgIf, RouterLink],
+    templateUrl: './productItem.component.html',
+    styleUrl: './productItem.component.css',
 })
 export class ProductItemComponent {
     @Input() products: ProductItem[] = [];
-    
+
+    @Output() dataEvent = new EventEmitter<number>();
+
+    handleDelete = (id: number) => {
+        // console.log(id);
+        this.dataEvent.emit(id);
+    };
 }
