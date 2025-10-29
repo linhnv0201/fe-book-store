@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right, #d434b0, #8029fc);
     height: calc(100vh - 70px); /*thụt dấu trừ vào là lỗi ngay*/
 }
-
+/* 
 .group-cart {
     width: 75%;
     background: #fff;
@@ -44,4 +44,4 @@
 .row-cart{
     display: flex;
     align-items: center;
-}
+} */
